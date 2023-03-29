@@ -51,7 +51,7 @@ Browse As screen:
                 Color: =RGBA(255, 255, 255, 1)
                 FillPortions: =1
                 Icon: =Icon.Add
-                OnSelect: =
+                OnSelect: =NewForm(Form1) && Navigate(Edit)
                 ZIndex: =4
 
         "Gallery2 As gallery.'BrowseLayout_Flexible_NewsFeed_ver4.0'":

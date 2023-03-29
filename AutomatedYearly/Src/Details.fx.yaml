@@ -9,6 +9,7 @@ Details As screen:
 
         Header_3 As Header:
             AlignInContainer: =AlignInContainer.Stretch
+            HomeScreen: =Browse
             LayoutMinHeight: =640
 
         VertContainerLower_5 As groupContainer.horizontalAutoLayoutContainer:
@@ -44,7 +45,7 @@ Details As screen:
                 Color: =RGBA(255, 255, 255, 1)
                 FillPortions: =1
                 Icon: =Icon.Edit
-                OnSelect: =Navigate(DetailsHeader.EditScreen)
+                OnSelect: =EditForm(Form1) && Navigate(Edit)
                 ZIndex: =4
 
         FormViewer1 As formViewer:
