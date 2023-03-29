@@ -14,7 +14,49 @@ Browse As screen:
             HeaderText: ="Browse"
             HomeScreen: =Browse
             LayoutMinHeight: =640
-            NewForm: =
+
+        VertContainerLower_3 As groupContainer.horizontalAutoLayoutContainer:
+            Fill: =RGBA(56, 96, 178, 1)
+            FillPortions: =0
+            Height: =100
+            LayoutJustifyContent: =LayoutJustifyContent.SpaceBetween
+            LayoutMinHeight: =112
+            LayoutMinWidth: =250
+            LayoutMode: =LayoutMode.Auto
+            ZIndex: =2
+
+            HeaderTitle_1 As label:
+                Align: =Align.Center
+                Color: =RGBA(255, 255, 255, 1)
+                Height: =Parent.Height
+                LayoutMinHeight: =70
+                LayoutMinWidth: =560
+                Size: =31
+                Text: ="Browse"
+                Width: =Parent.Width/2
+                ZIndex: =1
+
+            HeaderRefresh_1 As icon.Reload:
+                AlignInContainer: =AlignInContainer.Center
+                Color: =RGBA(255, 255, 255, 1)
+                FillPortions: =1
+                Icon: =Icon.Reload
+                ZIndex: =2
+
+            HeaderSort_1 As icon.ArrowsUpDown:
+                AlignInContainer: =AlignInContainer.Center
+                Color: =RGBA(255, 255, 255, 1)
+                FillPortions: =1
+                Icon: =Icon.Sort
+                ZIndex: =3
+
+            HeaderAdd_1 As icon.Add:
+                AlignInContainer: =AlignInContainer.Center
+                Color: =RGBA(255, 255, 255, 1)
+                FillPortions: =1
+                Icon: =Icon.Add
+                OnSelect: =
+                ZIndex: =4
 
         "Gallery2 As gallery.'BrowseLayout_Flexible_NewsFeed_ver4.0'":
             DelayItemLoading: =true
@@ -26,7 +68,7 @@ Browse As screen:
             OnSelect: =Navigate(Details)
             TemplatePadding: =0
             TemplateSize: =Min(220, Self.Height - 60)
-            ZIndex: =1
+            ZIndex: =3
 
             Title2 As label:
                 Height: =44
@@ -68,5 +110,5 @@ Browse As screen:
             AlignInContainer: =AlignInContainer.Center
             FooterText: =Gallery2.Height
             LayoutMinHeight: =640
-            ZIndex: =3
+            ZIndex: =4
 

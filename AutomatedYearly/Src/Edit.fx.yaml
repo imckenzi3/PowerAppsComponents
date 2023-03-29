@@ -13,7 +13,7 @@ Edit As screen:
             EditHeaderText: ="Edit"
             HomeScreen: =Browse
             LayoutMinHeight: =640
-            SubmitBtn: =Browse
+            SubmitBtn: =
             ZIndex: =1
 
         Form1 As form:

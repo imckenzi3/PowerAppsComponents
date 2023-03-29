@@ -4083,7 +4083,8 @@
           "InvariantPropertyName": "ClearBtn",
           "IsLockable": false,
           "NameMapSourceSchema": "?"
-        }
+        },
+        "SubmitForm"
       ],
       "DynamicProperties": [
         {
@@ -4167,6 +4168,11 @@
           "Category": "Data",
           "PropertyName": "EditHeaderText",
           "RuleProviderType": "Unknown"
+        },
+        {
+          "Category": "Data",
+          "PropertyName": "SubmitForm",
+          "RuleProviderType": "System"
         },
         {
           "Category": "Design",

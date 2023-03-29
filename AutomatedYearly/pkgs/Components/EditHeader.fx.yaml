@@ -5,6 +5,8 @@ EditHeader As CanvasComponent:
     Height: =200
     HomeScreen: =App.ActiveScreen
     SubmitBtn: =App.ActiveScreen
+    SubmitForm: |-
+        ={SampleStringField: "SampleText", SampleNumberField: 10, SampleBooleanField: true}
     Width: =640
     X: =0
     Y: =0
