@@ -7,6 +7,10 @@ Edit As screen:
         Width: =Parent.Width
         ZIndex: =4
 
+        Header_2 As Header:
+            AlignInContainer: =AlignInContainer.Stretch
+            LayoutMinHeight: =640
+
         VertContainerLower_4 As groupContainer.horizontalAutoLayoutContainer:
             Fill: =RGBA(56, 96, 178, 1)
             FillPortions: =0
