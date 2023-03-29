@@ -1,0 +1,30 @@
+{
+  "ad59edcb-ff12-42f9-ba73-1dce95763929": {
+    "connectionParameters": {
+      "sku": "Enterprise"
+    },
+    "connectionRef": {
+      "apiTier": "Standard",
+      "displayName": "SharePoint",
+      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1623/1.0.1623.3210/sharepointonline/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_sharepointonline",
+      "parameterHints": {},
+      "parameterHintsV2": {}
+    },
+    "datasets": {
+      "https://metisnationbc-my.sharepoint.com/personal/imckenzie_mnbc_ca": {
+        "dataSources": {
+          "Call Lag Automateds": {
+            "tableName": "6098f9ef-3e1a-4924-b733-8f12d5fc1f99"
+          }
+        }
+      }
+    },
+    "dataSources": [
+      "Call Lag Automateds"
+    ],
+    "dependencies": {},
+    "dependents": [],
+    "id": "ad59edcb-ff12-42f9-ba73-1dce95763929"
+  }
+}

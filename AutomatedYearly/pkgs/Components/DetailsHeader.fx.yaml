@@ -1,0 +1,81 @@
+DetailsHeader As CanvasComponent:
+    DetailsHeaderText: ="display text goes here"
+    EditScreen: =App.ActiveScreen
+    Fill: =RGBA(0, 0, 0, 0)
+    Height: =200
+    HomeScreen: =App.ActiveScreen
+    TrashBtn: =App.ActiveScreen
+    Width: =640
+    X: =0
+    Y: =0
+    ZIndex: =3
+
+    HeaderContainer_1 As groupContainer.verticalAutoLayoutContainer:
+        Height: =Parent.Height
+        LayoutDirection: =LayoutDirection.Vertical
+        LayoutMode: =LayoutMode.Auto
+        Width: =Parent.Width
+        ZIndex: =1
+
+        VertContainerUpper_1 As groupContainer.horizontalAutoLayoutContainer:
+            Fill: =RGBA(56, 96, 178, 1)
+            FillPortions: =0
+            Height: =100
+            LayoutJustifyContent: =LayoutJustifyContent.SpaceBetween
+            LayoutMinHeight: =112
+            LayoutMinWidth: =250
+            LayoutMode: =LayoutMode.Auto
+            ZIndex: =1
+
+            DetailsImage As image:
+                BorderColor: =RGBA(56, 96, 178, 1)
+                BorderThickness: =2
+                Fill: =RGBA(255, 255, 255, 1)
+                Image: ='Metis Background'
+                LayoutMinHeight: =320
+                LayoutMinWidth: =320
+                OnSelect: =Navigate(DetailsHeader.HomeScreen)
+                Width: =320
+                ZIndex: =1
+
+            DetailsBack As icon.BackArrow:
+                Icon: =Icon.BackArrow
+                PaddingRight: =25
+                ZIndex: =2
+
+        VertContainerLower_1 As groupContainer.horizontalAutoLayoutContainer:
+            Fill: =RGBA(56, 96, 178, 1)
+            FillPortions: =0
+            Height: =100
+            LayoutJustifyContent: =LayoutJustifyContent.SpaceBetween
+            LayoutMinHeight: =112
+            LayoutMinWidth: =250
+            LayoutMode: =LayoutMode.Auto
+            ZIndex: =2
+
+            DetailsTitle As label:
+                Color: =RGBA(255, 255, 255, 1)
+                Height: =Parent.Height
+                LayoutMinHeight: =70
+                LayoutMinWidth: =560
+                Size: =21
+                Text: =DetailsHeader.DetailsHeaderText
+                Width: =Parent.Width/2
+                ZIndex: =1
+
+            DetailsDelete As icon.ArrowsUpDown:
+                AlignInContainer: =AlignInContainer.Center
+                Color: =RGBA(255, 255, 255, 1)
+                FillPortions: =1
+                Icon: =Icon.Trash
+                OnSelect: =Navigate(DetailsHeader.TrashBtn)
+                ZIndex: =3
+
+            DetailsEdit As icon.Add:
+                AlignInContainer: =AlignInContainer.Center
+                Color: =RGBA(255, 255, 255, 1)
+                FillPortions: =1
+                Icon: =Icon.Edit
+                OnSelect: =Navigate(DetailsHeader.EditScreen)
+                ZIndex: =4
+

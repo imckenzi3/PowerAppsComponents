@@ -1,0 +1,61 @@
+BrowseBody As CanvasComponent:
+    BodyData: |-
+        =Table({SampleStringField: "SampleText", SampleNumberField: 10, SampleBooleanField: true})
+    Fill: =RGBA(0, 0, 0, 0)
+    Height: =640
+    Width: =640
+    X: =0
+    Y: =0
+    ZIndex: =2
+
+    "Gallery1 As gallery.'BrowseLayout_Flexible_NewsFeed_ver4.0'":
+        DelayItemLoading: =true
+        Height: =Parent.Height
+        Items: =BrowseBody.BodyData
+        Layout: =Layout.Vertical
+        LoadingSpinner: =LoadingSpinner.Data
+        TemplatePadding: =15
+        TemplateSize: =Min(220, Self.Height - 60)
+        Width: =Parent.Width
+        ZIndex: =1
+
+        Title4 As label:
+            Height: =Self.Size * 1.8
+            OnSelect: =Select(Parent)
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Text: =ThisItem.SampleStringField
+            VerticalAlign: =VerticalAlign.Top
+            Width: =Parent.TemplateWidth
+            ZIndex: =1
+
+        Body4 As label:
+            AutoHeight: =true
+            Height: =Self.Size * 4
+            OnSelect: =Select(Parent)
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Text: =ThisItem.SampleStringField
+            VerticalAlign: =VerticalAlign.Top
+            Width: =Parent.TemplateWidth
+            Y: =36
+            ZIndex: =2
+
+        Separator2 As rectangle:
+            Height: =1
+            OnSelect: =Select(Parent)
+            Width: =Parent.TemplateWidth
+            Y: =Max(Parent.TemplateHeight - 1, Body4.Y + Body4.Height + 10)
+            ZIndex: =4
+
+        Icon1 As icon.ChevronRight:
+            Icon: =Icon.ChevronRight
+            OnSelect: =Select(Parent)
+            X: =546
+            Y: =70
+            ZIndex: =5
+

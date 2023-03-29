@@ -1,0 +1,71 @@
+Browse As screen:
+
+    BrowseContainer As groupContainer.verticalAutoLayoutContainer:
+        Height: =Parent.Height
+        LayoutDirection: =LayoutDirection.Vertical
+        LayoutMode: =LayoutMode.Auto
+        Width: =Parent.Width
+        ZIndex: =4
+
+        BrowseHeader_1 As BrowseHeader:
+            AlignInContainer: =AlignInContainer.Stretch
+            DetailsScreen: =Details
+            EditScreen: =Edit
+            HeaderText: ="MNBC Call Log"
+            HomeScreen: =Browse
+            LayoutMinHeight: =640
+
+        "Gallery2 As gallery.'BrowseLayout_Flexible_NewsFeed_ver4.0'":
+            DelayItemLoading: =true
+            Items: ='Call Lag Automateds'
+            Layout: =Layout.Vertical
+            LayoutMinHeight: =287
+            LayoutMinWidth: =320
+            LoadingSpinner: =LoadingSpinner.Data
+            OnSelect: =Navigate(Details)
+            TemplatePadding: =0
+            TemplateSize: =Min(220, Self.Height - 60)
+            ZIndex: =1
+
+            Title2 As label:
+                Height: =44
+                OnSelect: =Select(Parent)
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: =ThisItem.'Name of Citizen/Company Called'
+                VerticalAlign: =VerticalAlign.Top
+                Width: =608
+                X: =32
+                Y: =40
+                ZIndex: =1
+
+            Body2 As label:
+                AutoHeight: =true
+                Height: =Self.Size * 4
+                OnSelect: =Select(Parent)
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: =ThisItem.Created
+                VerticalAlign: =VerticalAlign.Top
+                Width: =Title2.Width
+                X: =32
+                Y: =Title2.Y + Title2.Height + 8
+                ZIndex: =2
+
+            Separator1 As rectangle:
+                Height: =1
+                OnSelect: =Select(Parent)
+                Width: =Parent.TemplateWidth
+                Y: =Max(Parent.TemplateHeight - 1, Body2.Y + Body2.Height + 10)
+                ZIndex: =4
+
+        Footer_1 As Footer:
+            AlignInContainer: =AlignInContainer.Center
+            FooterText: =Gallery2.Height
+            LayoutMinHeight: =640
+            ZIndex: =3
+
