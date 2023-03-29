@@ -60,10 +60,10 @@
                   "relativeAddress": 0
                 },
                 "region": {
-                  "charLength": 5,
+                  "charLength": 21,
                   "charOffset": 0,
                   "snippet": {
-                    "text": "Form1"
+                    "text": "'Call Lag Automateds'"
                   }
                 }
               },
@@ -76,15 +76,14 @@
           ],
           "message": {
             "arguments": [
-              "Text",
-              "Control"
+              "SampleBooleanField, SampleNumberField, SampleStringField"
             ],
             "id": "issue"
           },
           "properties": {
             "level": "High"
           },
-          "ruleId": "app-ErrIncompatibleRulePropTypes-PropKind-RuleKind",
+          "ruleId": "app-InvalidTable",
           "ruleIndex": 1
         },
         {
@@ -888,16 +887,17 @@
               }
             },
             {
-              "id": "app-ErrIncompatibleRulePropTypes-PropKind-RuleKind",
+              "id": "app-InvalidTable",
               "messageStrings": {
                 "issue": {
-                  "text": "Expected {0} value."
+                  "text": "The table passed in has none of the expected columns: {0}"
                 }
               },
               "properties": {
                 "componentType": "app",
                 "howToFix": [
-                  "Change the rule to produce a {0} value."
+                  "Specify a different value.",
+                  "Change the structure of the value to match the expected structure. We recommend using the ForAll function to rearrange the table's columns."
                 ],
                 "level": "High",
                 "primaryCategory": "formula",

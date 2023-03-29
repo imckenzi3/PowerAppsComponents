@@ -129,7 +129,7 @@
   },
   "FunctionParamsInvariantScripts": {},
   "FunctionParamsInvariantScriptsOnInstances": {},
-  "HeaderLastSavedDateTimeUTC": "03/29/2023 16:56:22",
+  "HeaderLastSavedDateTimeUTC": "03/29/2023 16:58:33",
   "IsLegacyComponentAllowGlobalScopeCase": false,
   "LocalConnectionIDReferences": {
     "ad59edcb-ff12-42f9-ba73-1dce95763929": "\"/providers/microsoft.powerapps/apis/shared_sharepointonline/connections/1e6a9b6028dd4468a38dfeda58c8254d\""
@@ -139,7 +139,7 @@
     "Metis Background": "0f26ad01-d95f-4875-8ea4-4a8e37cd2228.png"
   },
   "LocalResourceRootPaths": {
-    "Metis Background": "https://docserverpwaprodeca.blob.core.windows.net/486307e1-16fa-4029-9f73-830b75051aa6-1/resource/Assets0Images00f26ad01-d95f-4875-8ea4-4a8e37cd2228.png?sv=2018-03-28&sr=b&sig=%2Fq3LNa5B3TPATJM88LuIKjisWIIbMS%2B5DwzunLPVg9o%3D&spr=https&se=2023-03-30T17%3A07%3A27Z&sp=r"
+    "Metis Background": "https://docserverpwaprodeca.blob.core.windows.net/84001197-5fbd-4490-8d23-e3c2b2924884-1/resource/Assets0Images00f26ad01-d95f-4875-8ea4-4a8e37cd2228.png?sv=2018-03-28&sr=b&sig=2JbqE9tapLF55Kgc6QYSJEedcB1fU%2BQuHQDkx38RY7M%3D&spr=https&se=2023-03-30T17%3A12%3A21Z&sp=r"
   },
   "OrderComponentMetadata": {
     "34adb598f43747319a8edaa010b7758d": 0,
@@ -412,7 +412,7 @@
   "RuleScreenIdWithoutScreen": {},
   "TemplateVersions": {},
   "VolatileProperties": {
-    "AnalysisLoadTime": 0.5986248,
+    "AnalysisLoadTime": 0.7429833,
     "ControlCount": {
       "34adb598f43747319a8edaa010b7758d": 3,
       "918ecb6f30ca4f2a8bdfac51d6665eb2": 3,
@@ -434,7 +434,7 @@
       "text": 4,
       "typedDataCard": 12
     },
-    "DeserializationLoadTime": 1.7166848,
+    "DeserializationLoadTime": 1.8168522,
     "ErrorCount": 2
   },
   "WasLocalDatabaseReferencesEmpty": true
