@@ -185,7 +185,7 @@
                 "Name": "HeaderImage",
                 "Parent": "VertContainerUpper",
                 "PersistMetaDataIDKey": false,
-                "PublishOrderIndex": 14,
+                "PublishOrderIndex": 70,
                 "Rules": [
                   {
                     "Category": "Data",
@@ -495,7 +495,7 @@
                 "Name": "HeaderBack",
                 "Parent": "VertContainerUpper",
                 "PersistMetaDataIDKey": false,
-                "PublishOrderIndex": 15,
+                "PublishOrderIndex": 71,
                 "Rules": [
                   {
                     "Category": "Design",
@@ -762,7 +762,7 @@
             "Name": "VertContainerUpper",
             "Parent": "HeaderContainer",
             "PersistMetaDataIDKey": false,
-            "PublishOrderIndex": 13,
+            "PublishOrderIndex": 69,
             "Rules": [
               {
                 "Category": "Design",
@@ -1040,7 +1040,7 @@
                 "Name": "HeaderTitle",
                 "Parent": "VertContainerLower",
                 "PersistMetaDataIDKey": false,
-                "PublishOrderIndex": 17,
+                "PublishOrderIndex": 73,
                 "Rules": [
                   {
                     "Category": "Data",
@@ -1397,7 +1397,7 @@
                 "Name": "HeaderRefresh",
                 "Parent": "VertContainerLower",
                 "PersistMetaDataIDKey": false,
-                "PublishOrderIndex": 18,
+                "PublishOrderIndex": 74,
                 "Rules": [
                   {
                     "Category": "Design",
@@ -1658,7 +1658,7 @@
                 "Name": "HeaderSort",
                 "Parent": "VertContainerLower",
                 "PersistMetaDataIDKey": false,
-                "PublishOrderIndex": 19,
+                "PublishOrderIndex": 75,
                 "Rules": [
                   {
                     "Category": "Design",
@@ -1927,7 +1927,7 @@
                 "Name": "HeaderAdd",
                 "Parent": "VertContainerLower",
                 "PersistMetaDataIDKey": false,
-                "PublishOrderIndex": 20,
+                "PublishOrderIndex": 76,
                 "Rules": [
                   {
                     "Category": "Design",
@@ -2069,7 +2069,7 @@
                   },
                   {
                     "Category": "Behavior",
-                    "InvariantScript": "Navigate(BrowseHeader.EditScreen) && NewForm(BrowseHeader.NewForm)",
+                    "InvariantScript": "Navigate(BrowseHeader.EditScreen) && BrowseHeader.NewForm",
                     "Property": "OnSelect",
                     "RuleProviderType": "Unknown"
                   }
@@ -2194,7 +2194,7 @@
             "Name": "VertContainerLower",
             "Parent": "HeaderContainer",
             "PersistMetaDataIDKey": false,
-            "PublishOrderIndex": 16,
+            "PublishOrderIndex": 72,
             "Rules": [
               {
                 "Category": "Design",
@@ -2369,7 +2369,7 @@
         "Name": "HeaderContainer",
         "Parent": "BrowseHeader",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 12,
+        "PublishOrderIndex": 68,
         "Rules": [
           {
             "Category": "Design",
@@ -2523,16 +2523,9 @@
       "HeaderFontSize",
       "DetailsScreen",
       "EditScreen",
-      {
-        "AFDDataSourceName": "",
-        "AutoRuleBindingEnabled": false,
-        "AutoRuleBindingString": "Table({SampleStringField: \"SampleText\", SampleNumberField: 10, SampleBooleanField: true})",
-        "InvariantPropertyName": "NewForm",
-        "IsLockable": false,
-        "NameMapSourceSchema": "?"
-      }
+      "NewForm"
     ],
-    "LastModifiedTimestamp": "638157059483833726",
+    "LastModifiedTimestamp": "638157063859222857",
     "Name": "BrowseHeader",
     "Rules": [
       {
@@ -2567,7 +2560,7 @@
       },
       {
         "Category": "Data",
-        "InvariantScript": "table",
+        "InvariantScript": "\"Text\"",
         "Property": "NewForm",
         "RuleProviderType": "System"
       },
@@ -2669,9 +2662,9 @@
       "DisplayName": "NewForm",
       "Hidden": false,
       "Name": "NewForm",
-      "PropertyDataTypeKey": "Table",
+      "PropertyDataTypeKey": "String",
       "Tooltip": "A custom property",
-      "Type": "{\"Version\":\"1.330\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"Table\",\"EnumString\":\"\",\"Type\":[{\"Name\":\"SampleBooleanField\",\"Kind\":\"_MinPrimitive\",\"EnumString\":\"\",\"Type\":[]},{\"Name\":\"SampleNumberField\",\"Kind\":\"Number\",\"EnumString\":\"\",\"Type\":[]},{\"Name\":\"SampleStringField\",\"Kind\":\"String\",\"EnumString\":\"\",\"Type\":[]}]}}"
+      "Type": "{\"Version\":\"1.330\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"String\",\"EnumString\":\"\",\"Type\":[]}}"
     }
   ],
   "FirstParty": true,
@@ -2682,7 +2675,7 @@
   "IsPcfControl": false,
   "IsPremiumPcfControl": false,
   "IsWidgetTemplate": false,
-  "LastModifiedTimestamp": "638157059483833726",
+  "LastModifiedTimestamp": "638157063859222857",
   "Name": "918ecb6f30ca4f2a8bdfac51d6665eb2",
   "OverridableProperties": {},
   "SourceLibraryId": "480bfc4c-fa8b-488d-b15b-dd3cb533ae03",

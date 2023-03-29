@@ -500,7 +500,7 @@
         {
           "AFDDataSourceName": "",
           "AutoRuleBindingEnabled": false,
-          "AutoRuleBindingString": "{SampleStringField: \"SampleText\", SampleNumberField: 10, SampleBooleanField: true}",
+          "AutoRuleBindingString": "",
           "InvariantPropertyName": "NewForm",
           "IsLockable": false,
           "NameMapSourceSchema": "?"

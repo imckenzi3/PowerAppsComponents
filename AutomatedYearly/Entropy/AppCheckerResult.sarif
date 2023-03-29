@@ -14,69 +14,32 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "BrowseHeader.HeaderContainer.VertContainerLower.HeaderAdd.OnSelect"
+                  "fullyQualifiedName": "Edit.EditContainer.Form1.DefaultMode"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "BrowseHeader.HeaderContainer.VertContainerLower.HeaderAdd.OnSelect",
+                  "fullyQualifiedName": "Edit.EditContainer.Form1.DefaultMode",
                   "relativeAddress": 0
                 },
                 "region": {
-                  "charLength": 8,
-                  "charOffset": 57,
+                  "charLength": 7,
+                  "charOffset": 22,
                   "snippet": {
-                    "text": ".NewForm"
+                    "text": "NewForm"
                   }
                 }
               },
               "properties": {
-                "member": "OnSelect",
-                "module": "BrowseHeader",
-                "type": "BrowseHeader.HeaderContainer.VertContainerLower.HeaderAdd"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrFunctionExpectsFormControl",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "BrowseHeader.NewForm"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "BrowseHeader.NewForm",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 5,
-                  "charOffset": 0,
-                  "snippet": {
-                    "text": "table"
-                  }
-                }
-              },
-              "properties": {
-                "member": "NewForm",
-                "module": "BrowseHeader",
-                "type": "BrowseHeader"
+                "member": "DefaultMode",
+                "module": "Edit",
+                "type": "Edit.EditContainer.Form1"
               }
             }
           ],
           "message": {
             "arguments": [
-              "table"
+              "NewForm"
             ],
             "id": "issue"
           },
@@ -84,6 +47,47 @@
             "level": "High"
           },
           "ruleId": "app-ErrInvalidName",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Edit.EditContainer.Form1.DefaultMode"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Edit.EditContainer.Form1.DefaultMode",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 1,
+                  "charOffset": 30,
+                  "snippet": {
+                    "text": "="
+                  }
+                }
+              },
+              "properties": {
+                "member": "DefaultMode",
+                "module": "Edit",
+                "type": "Edit.EditContainer.Form1"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "Error",
+              "Boolean"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrIncompatibleTypesForEquality-Left-Right",
           "ruleIndex": 1
         },
         {
@@ -434,6 +438,66 @@
                 "member": "TabIndex",
                 "module": "DetailsHeader",
                 "type": "DetailsHeader.HeaderContainer_1.VertContainerUpper_1.DetailsImage"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 3
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "BrowseHeader.HeaderContainer.VertContainerLower.HeaderAdd.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "BrowseHeader.HeaderContainer.VertContainerLower.HeaderAdd.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "BrowseHeader",
+                "type": "BrowseHeader.HeaderContainer.VertContainerLower.HeaderAdd"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 2
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "BrowseHeader.HeaderContainer.VertContainerLower.HeaderAdd.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "BrowseHeader.HeaderContainer.VertContainerLower.HeaderAdd.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "BrowseHeader",
+                "type": "BrowseHeader.HeaderContainer.VertContainerLower.HeaderAdd"
               }
             }
           ],
@@ -873,20 +937,6 @@
           "name": "PowerApps app checker",
           "rules": [
             {
-              "id": "app-ErrFunctionExpectsFormControl",
-              "messageStrings": {
-                "issue": {
-                  "text": "The function expects an editable form as its input."
-                }
-              },
-              "properties": {
-                "componentType": "app",
-                "level": "High",
-                "primaryCategory": "formula",
-                "whyFix": ""
-              }
-            },
-            {
               "id": "app-ErrInvalidName",
               "messageStrings": {
                 "issue": {
@@ -897,6 +947,24 @@
                 "componentType": "app",
                 "howToFix": [
                   "Remove or correct the reference to the name that isn't valid."
+                ],
+                "level": "High",
+                "primaryCategory": "formula",
+                "whyFix": ""
+              }
+            },
+            {
+              "id": "app-ErrIncompatibleTypesForEquality-Left-Right",
+              "messageStrings": {
+                "issue": {
+                  "text": "Incompatible types for comparison. These types can't be compared: {0}, {1}."
+                }
+              },
+              "properties": {
+                "componentType": "app",
+                "howToFix": [
+                  "You might need to convert the value to be the same type, such as converting a date string (e.g., \"12/31/2018\") to a date value.",
+                  "If you’re comparing records or tables, the field or column types must match exactly."
                 ],
                 "level": "High",
                 "primaryCategory": "formula",
