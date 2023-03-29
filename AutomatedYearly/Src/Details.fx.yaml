@@ -1,0 +1,323 @@
+Details As screen:
+
+    DetailsContainer As groupContainer.verticalAutoLayoutContainer:
+        Height: =Parent.Height
+        LayoutDirection: =LayoutDirection.Vertical
+        LayoutMode: =LayoutMode.Auto
+        Width: =Parent.Width
+        ZIndex: =4
+
+        DetailsHeader_1 As DetailsHeader:
+            AlignInContainer: =AlignInContainer.Stretch
+            DetailsHeaderText: ="Details"
+            EditScreen: =Edit
+            HomeScreen: =Browse
+            LayoutMinHeight: =640
+            ZIndex: =1
+
+        FormViewer1 As formViewer:
+            DataSource: ='Call Lag Automateds'
+            Item: =Gallery2.Selected
+            LayoutMinHeight: =250
+            LayoutMinWidth: =320
+            Width: =640
+            ZIndex: =2
+
+            "'Name of Citizen/Company Called_DataCard1' As typedDataCard.textualViewCard":
+                BorderStyle: =BorderStyle.Solid
+                DataField: ="CitizensName"
+                Default: =ThisItem.'Name of Citizen/Company Called'
+                DisplayMode: =DisplayMode.View
+                DisplayName: =DataSourceInfo([@'Call Lag Automateds'],DataSourceInfo.DisplayName,"CitizensName")
+                Fill: =RGBA(0, 0, 0, 0)
+                Height: =40
+                Required: =true
+                Width: =640
+                X: =0
+                Y: =0
+                ZIndex: =3
+
+                DataCardKey1 As label:
+                    AutoHeight: =true
+                    Height: =48
+                    Size: =21
+                    Text: =Parent.DisplayName
+                    Width: =Parent.Width - 60
+                    Wrap: =false
+                    X: =30
+                    Y: =10
+                    ZIndex: =1
+
+                DataCardValue1 As label:
+                    AutoHeight: =true
+                    DisplayMode: =Parent.DisplayMode
+                    PaddingLeft: =0
+                    PaddingRight: =0
+                    PaddingTop: =0
+                    Size: =21
+                    Text: =Parent.Default
+                    Width: =Parent.Width - 60
+                    X: =30
+                    Y: =DataCardKey1.Y + DataCardKey1.Height + 5
+                    ZIndex: =2
+
+            "'Purpose of Call_DataCard1' As typedDataCard.textualViewCard":
+                BorderStyle: =BorderStyle.Solid
+                DataField: ="ReasonForCall"
+                Default: =ThisItem.'Purpose of Call'
+                DisplayMode: =DisplayMode.View
+                DisplayName: =DataSourceInfo([@'Call Lag Automateds'],DataSourceInfo.DisplayName,"ReasonForCall")
+                Fill: =RGBA(0, 0, 0, 0)
+                Height: =40
+                Required: =true
+                Width: =640
+                X: =0
+                Y: =1
+                ZIndex: =3
+
+                DataCardKey2 As label:
+                    AutoHeight: =true
+                    Height: =48
+                    Size: =21
+                    Text: =Parent.DisplayName
+                    Width: =Parent.Width - 60
+                    Wrap: =false
+                    X: =30
+                    Y: =10
+                    ZIndex: =1
+
+                DataCardValue2 As label:
+                    AutoHeight: =true
+                    DisplayMode: =Parent.DisplayMode
+                    PaddingLeft: =0
+                    PaddingRight: =0
+                    PaddingTop: =0
+                    Size: =21
+                    Text: =Parent.Default
+                    Width: =Parent.Width - 60
+                    X: =30
+                    Y: =DataCardKey2.Y + DataCardKey2.Height + 5
+                    ZIndex: =2
+
+            "'Employee Contacted_DataCard1' As typedDataCard.comboBoxViewCard":
+                BorderStyle: =BorderStyle.Solid
+                DataField: ="EmployeeContacted"
+                Default: =ThisItem.'Employee Contacted'
+                DisplayMode: =DisplayMode.View
+                DisplayName: =DataSourceInfo([@'Call Lag Automateds'],DataSourceInfo.DisplayName,"EmployeeContacted")
+                Fill: =RGBA(0, 0, 0, 0)
+                Height: =50
+                Required: =false
+                Update: =DataCardValue3.Selected
+                Width: =640
+                X: =0
+                Y: =2
+                ZIndex: =3
+
+                DataCardKey3 As label:
+                    AutoHeight: =true
+                    Height: =48
+                    Size: =21
+                    Text: =Parent.DisplayName
+                    Width: =Parent.Width - 60
+                    Wrap: =false
+                    X: =30
+                    Y: =10
+                    ZIndex: =1
+
+                DataCardValue3 As combobox:
+                    BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                    DefaultSelectedItems: =Parent.Default
+                    DisplayFields: =["DisplayName","Email","Picture"]
+                    DisplayMode: =Parent.DisplayMode
+                    Height: =70
+                    Items: =Choices([@'Call Lag Automateds'].EmployeeContacted)
+                    PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
+                    SearchFields: =["DisplayName"]
+                    SearchItems: =Choices('Call Lag Automateds'.EmployeeContacted,DataCardValue3.SearchText)
+                    SelectMultiple: =false
+                    Size: =21
+                    Template: =ListItemTemplate.Person
+                    Width: =Parent.Width - 60
+                    X: =30
+                    Y: =DataCardKey3.Y + DataCardKey3.Height + 5
+                    ZIndex: =2
+
+                ErrorMessage1 As label:
+                    AutoHeight: =true
+                    Height: =10
+                    Live: =Live.Assertive
+                    PaddingBottom: =0
+                    PaddingLeft: =0
+                    PaddingRight: =0
+                    PaddingTop: =0
+                    Size: =24
+                    Text: =Parent.Error
+                    Visible: =Parent.DisplayMode=DisplayMode.Edit
+                    Width: =Parent.Width - 60
+                    X: =30
+                    Y: =DataCardValue3.Y + DataCardValue3.Height
+                    ZIndex: =3
+
+                StarVisible1 As label:
+                    Align: =Align.Center
+                    Height: =DataCardKey3.Height
+                    Size: =21
+                    Text: ="*"
+                    Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                    Width: =30
+                    Wrap: =false
+                    Y: =DataCardKey3.Y
+                    ZIndex: =4
+
+            Ministry_DataCard1 As typedDataCard.textualViewCard:
+                BorderStyle: =BorderStyle.Solid
+                DataField: ="Ministry"
+                Default: =ThisItem.Ministry
+                DisplayMode: =DisplayMode.View
+                DisplayName: =DataSourceInfo([@'Call Lag Automateds'],DataSourceInfo.DisplayName,"Ministry")
+                Fill: =RGBA(0, 0, 0, 0)
+                Height: =40
+                Required: =false
+                Width: =640
+                X: =0
+                Y: =3
+                ZIndex: =3
+
+                DataCardKey4 As label:
+                    AutoHeight: =true
+                    Height: =48
+                    Size: =21
+                    Text: =Parent.DisplayName
+                    Width: =Parent.Width - 60
+                    Wrap: =false
+                    X: =30
+                    Y: =10
+                    ZIndex: =1
+
+                DataCardValue4 As label:
+                    AutoHeight: =true
+                    DisplayMode: =Parent.DisplayMode
+                    PaddingLeft: =0
+                    PaddingRight: =0
+                    PaddingTop: =0
+                    Size: =21
+                    Text: =Parent.Default
+                    Width: =Parent.Width - 60
+                    X: =30
+                    Y: =DataCardKey4.Y + DataCardKey4.Height + 5
+                    ZIndex: =2
+
+            "'Status of Call_DataCard1' As typedDataCard.comboBoxViewCard":
+                BorderStyle: =BorderStyle.Solid
+                DataField: ="TransferorVoicemail"
+                Default: =ThisItem.'Status of Call'
+                DisplayMode: =DisplayMode.View
+                DisplayName: =DataSourceInfo([@'Call Lag Automateds'],DataSourceInfo.DisplayName,"TransferorVoicemail")
+                Fill: =RGBA(0, 0, 0, 0)
+                Height: =50
+                Required: =true
+                Update: =DataCardValue5.Selected
+                Width: =640
+                X: =0
+                Y: =4
+                ZIndex: =3
+
+                DataCardKey5 As label:
+                    AutoHeight: =true
+                    Height: =48
+                    Size: =21
+                    Text: =Parent.DisplayName
+                    Width: =Parent.Width - 60
+                    Wrap: =false
+                    X: =30
+                    Y: =10
+                    ZIndex: =1
+
+                DataCardValue5 As combobox:
+                    BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                    DefaultSelectedItems: =Parent.Default
+                    DisplayFields: =["Value"]
+                    DisplayMode: =Parent.DisplayMode
+                    Height: =70
+                    Items: =Choices([@'Call Lag Automateds'].TransferorVoicemail)
+                    PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
+                    SearchFields: =["Value"]
+                    SearchItems: =Choices('Call Lag Automateds'.TransferorVoicemail,DataCardValue5.SearchText)
+                    SelectMultiple: =false
+                    Size: =21
+                    Width: =Parent.Width - 60
+                    X: =30
+                    Y: =DataCardKey5.Y + DataCardKey5.Height + 5
+                    ZIndex: =2
+
+                ErrorMessage2 As label:
+                    AutoHeight: =true
+                    Height: =10
+                    Live: =Live.Assertive
+                    PaddingBottom: =0
+                    PaddingLeft: =0
+                    PaddingRight: =0
+                    PaddingTop: =0
+                    Size: =24
+                    Text: =Parent.Error
+                    Visible: =Parent.DisplayMode=DisplayMode.Edit
+                    Width: =Parent.Width - 60
+                    X: =30
+                    Y: =DataCardValue5.Y + DataCardValue5.Height
+                    ZIndex: =3
+
+                StarVisible2 As label:
+                    Align: =Align.Center
+                    Height: =DataCardKey5.Height
+                    Size: =21
+                    Text: ="*"
+                    Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                    Width: =30
+                    Wrap: =false
+                    Y: =DataCardKey5.Y
+                    ZIndex: =4
+
+            "'Additional Notes_DataCard1' As typedDataCard.textualViewCard":
+                BorderStyle: =BorderStyle.Solid
+                DataField: ="Notes"
+                Default: =ThisItem.'Additional Notes'
+                DisplayMode: =DisplayMode.View
+                DisplayName: =DataSourceInfo([@'Call Lag Automateds'],DataSourceInfo.DisplayName,"Notes")
+                Fill: =RGBA(0, 0, 0, 0)
+                Height: =40
+                Required: =false
+                Width: =640
+                X: =0
+                Y: =5
+                ZIndex: =3
+
+                DataCardKey6 As label:
+                    AutoHeight: =true
+                    Height: =48
+                    Size: =21
+                    Text: =Parent.DisplayName
+                    Width: =Parent.Width - 60
+                    Wrap: =false
+                    X: =30
+                    Y: =10
+                    ZIndex: =1
+
+                DataCardValue6 As label:
+                    AutoHeight: =true
+                    DisplayMode: =Parent.DisplayMode
+                    PaddingLeft: =0
+                    PaddingRight: =0
+                    PaddingTop: =0
+                    Size: =21
+                    Text: =Parent.Default
+                    Width: =Parent.Width - 60
+                    X: =30
+                    Y: =DataCardKey6.Y + DataCardKey6.Height + 5
+                    ZIndex: =2
+
+        Footer_2 As Footer:
+            AlignInContainer: =AlignInContainer.Center
+            LayoutMinHeight: =640
+            ZIndex: =3
+

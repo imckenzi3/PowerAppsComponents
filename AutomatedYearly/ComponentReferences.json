@@ -1,0 +1,62 @@
+[
+  {
+    "HasLibraryLogicalName": true,
+    "InstanceCount": 1,
+    "LibraryId": "480bfc4c-fa8b-488d-b15b-dd3cb533ae03",
+    "LibraryLogicalName": "crf1c_imbasiclayout_52933",
+    "LibraryVersion": "2023-03-28T20:50:33Z",
+    "OriginalComponentDefinitionTemplateId": "41bc12977c1149eea604ab3bd1af9382",
+    "RefusedSourceLastTimeSaved": "0001-01-01T00:00:00",
+    "SourceLastTimeSaved": "2023-03-28T20:53:36.337+00:00"
+  },
+  {
+    "HasLibraryLogicalName": true,
+    "InstanceCount": 0,
+    "LibraryId": "480bfc4c-fa8b-488d-b15b-dd3cb533ae03",
+    "LibraryLogicalName": "crf1c_imbasiclayout_52933",
+    "LibraryVersion": "2023-03-28T20:50:33Z",
+    "OriginalComponentDefinitionTemplateId": "4ee17d4dedc54694a6fa048ce4e8954f",
+    "RefusedSourceLastTimeSaved": "0001-01-01T00:00:00",
+    "SourceLastTimeSaved": "2023-03-28T20:53:36.337+00:00"
+  },
+  {
+    "HasLibraryLogicalName": true,
+    "InstanceCount": 1,
+    "LibraryId": "480bfc4c-fa8b-488d-b15b-dd3cb533ae03",
+    "LibraryLogicalName": "crf1c_imbasiclayout_52933",
+    "LibraryVersion": "2023-03-28T20:50:33Z",
+    "OriginalComponentDefinitionTemplateId": "abca009643e64efea7441d9994288d38",
+    "RefusedSourceLastTimeSaved": "0001-01-01T00:00:00",
+    "SourceLastTimeSaved": "2023-03-28T20:53:36.337+00:00"
+  },
+  {
+    "HasLibraryLogicalName": true,
+    "InstanceCount": 1,
+    "LibraryId": "480bfc4c-fa8b-488d-b15b-dd3cb533ae03",
+    "LibraryLogicalName": "crf1c_imbasiclayout_52933",
+    "LibraryVersion": "2023-03-28T20:50:33Z",
+    "OriginalComponentDefinitionTemplateId": "c07de5b2801f4b41a5329077e411369f",
+    "RefusedSourceLastTimeSaved": "0001-01-01T00:00:00",
+    "SourceLastTimeSaved": "2023-03-28T20:53:36.337+00:00"
+  },
+  {
+    "HasLibraryLogicalName": true,
+    "InstanceCount": 3,
+    "LibraryId": "480bfc4c-fa8b-488d-b15b-dd3cb533ae03",
+    "LibraryLogicalName": "crf1c_imbasiclayout_52933",
+    "LibraryVersion": "2023-03-28T20:50:33Z",
+    "OriginalComponentDefinitionTemplateId": "d8dc8adbecf14af78935fcfb62864ff0",
+    "RefusedSourceLastTimeSaved": "0001-01-01T00:00:00",
+    "SourceLastTimeSaved": "2023-03-28T20:53:36.337+00:00"
+  },
+  {
+    "HasLibraryLogicalName": true,
+    "InstanceCount": 0,
+    "LibraryId": "5d6ee142-6a26-44ee-8469-83b952d334d6",
+    "LibraryLogicalName": "crf1c_responsive_ce487",
+    "LibraryVersion": "2023-03-28T16:13:08Z",
+    "OriginalComponentDefinitionTemplateId": "9eff7b6e7d194ba6892da793ea504f0c",
+    "RefusedSourceLastTimeSaved": "0001-01-01T00:00:00",
+    "SourceLastTimeSaved": "2023-03-28T17:07:19.781+00:00"
+  }
+]
