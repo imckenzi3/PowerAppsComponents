@@ -670,14 +670,7 @@
           "IsLockable": false,
           "NameMapSourceSchema": "?"
         },
-        {
-          "AFDDataSourceName": "",
-          "AutoRuleBindingEnabled": false,
-          "AutoRuleBindingString": "",
-          "InvariantPropertyName": "NewForm",
-          "IsLockable": false,
-          "NameMapSourceSchema": "?"
-        }
+        "NewForm"
       ],
       "DynamicProperties": [
         {

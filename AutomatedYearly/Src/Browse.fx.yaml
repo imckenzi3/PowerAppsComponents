@@ -488,7 +488,7 @@ Browse As screen:
             HeaderText: ="Browse"
             HomeScreen: =Browse
             LayoutMinHeight: =640
-            NewForm: =NewForm(Form1_1)
+            NewForm: =
 
         "Gallery2 As gallery.'BrowseLayout_Flexible_NewsFeed_ver4.0'":
             DelayItemLoading: =true
