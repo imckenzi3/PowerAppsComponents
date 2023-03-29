@@ -497,7 +497,14 @@
           "IsLockable": false,
           "NameMapSourceSchema": "?"
         },
-        "ResetGallery"
+        {
+          "AFDDataSourceName": "",
+          "AutoRuleBindingEnabled": false,
+          "AutoRuleBindingString": "{SampleStringField: \"SampleText\", SampleNumberField: 10, SampleBooleanField: true}",
+          "InvariantPropertyName": "NewForm",
+          "IsLockable": false,
+          "NameMapSourceSchema": "?"
+        }
       ],
       "DynamicProperties": [
         {
@@ -589,8 +596,8 @@
         },
         {
           "Category": "Data",
-          "PropertyName": "ResetGallery",
-          "RuleProviderType": "System"
+          "PropertyName": "NewForm",
+          "RuleProviderType": "Unknown"
         },
         {
           "Category": "Design",

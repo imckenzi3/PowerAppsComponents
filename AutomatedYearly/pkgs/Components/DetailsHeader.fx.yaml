@@ -54,11 +54,12 @@ DetailsHeader As CanvasComponent:
             ZIndex: =2
 
             DetailsTitle As label:
+                Align: =Align.Center
                 Color: =RGBA(255, 255, 255, 1)
                 Height: =Parent.Height
                 LayoutMinHeight: =70
                 LayoutMinWidth: =560
-                Size: =21
+                Size: =31
                 Text: =DetailsHeader.DetailsHeaderText
                 Width: =Parent.Width/2
                 ZIndex: =1

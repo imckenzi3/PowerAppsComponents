@@ -6,8 +6,8 @@ BrowseHeader As CanvasComponent:
     HeaderText: ="Screen text goes here"
     Height: =200
     HomeScreen: =App.ActiveScreen
-    ResetGallery: |-
-        =Table({SampleStringField: "SampleText", SampleNumberField: 10, SampleBooleanField: true})
+    NewForm: |-
+        ={SampleStringField: "SampleText", SampleNumberField: 10, SampleBooleanField: true}
     Width: =640
     X: =0
     Y: =0
@@ -57,11 +57,12 @@ BrowseHeader As CanvasComponent:
             ZIndex: =2
 
             HeaderTitle As label:
+                Align: =Align.Center
                 Color: =RGBA(255, 255, 255, 1)
                 Height: =Parent.Height
                 LayoutMinHeight: =70
                 LayoutMinWidth: =560
-                Size: =21
+                Size: =31
                 Text: =BrowseHeader.HeaderText
                 Width: =Parent.Width/2
                 ZIndex: =1
@@ -85,6 +86,6 @@ BrowseHeader As CanvasComponent:
                 Color: =RGBA(255, 255, 255, 1)
                 FillPortions: =1
                 Icon: =Icon.Add
-                OnSelect: =Navigate(BrowseHeader.EditScreen);
+                OnSelect: =Navigate(BrowseHeader.EditScreen) && NewForm(BrowseHeader.NewForm)
                 ZIndex: =4
 
