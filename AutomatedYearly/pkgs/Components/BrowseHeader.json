@@ -2523,9 +2523,16 @@
       "HeaderFontSize",
       "DetailsScreen",
       "EditScreen",
-      "NewForm"
+      {
+        "AFDDataSourceName": "",
+        "AutoRuleBindingEnabled": false,
+        "AutoRuleBindingString": "Table({SampleStringField: \"SampleText\", SampleNumberField: 10, SampleBooleanField: true})",
+        "InvariantPropertyName": "NewForm",
+        "IsLockable": false,
+        "NameMapSourceSchema": "?"
+      }
     ],
-    "LastModifiedTimestamp": "638157058539559384",
+    "LastModifiedTimestamp": "638157059483833726",
     "Name": "BrowseHeader",
     "Rules": [
       {
@@ -2560,7 +2567,7 @@
       },
       {
         "Category": "Data",
-        "InvariantScript": "Table({SampleStringField: \"SampleText\", SampleNumberField: 10, SampleBooleanField: true})",
+        "InvariantScript": "table",
         "Property": "NewForm",
         "RuleProviderType": "System"
       },
@@ -2675,7 +2682,7 @@
   "IsPcfControl": false,
   "IsPremiumPcfControl": false,
   "IsWidgetTemplate": false,
-  "LastModifiedTimestamp": "638157058539559384",
+  "LastModifiedTimestamp": "638157059483833726",
   "Name": "918ecb6f30ca4f2a8bdfac51d6665eb2",
   "OverridableProperties": {},
   "SourceLibraryId": "480bfc4c-fa8b-488d-b15b-dd3cb533ae03",

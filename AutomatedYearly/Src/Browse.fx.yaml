@@ -14,7 +14,7 @@ Browse As screen:
             HeaderText: ="MNBC Call Log"
             HomeScreen: =Browse
             LayoutMinHeight: =640
-            NewForm: ='Call Lag Automateds'
+            NewForm: =
 
         "Gallery2 As gallery.'BrowseLayout_Flexible_NewsFeed_ver4.0'":
             DelayItemLoading: =true

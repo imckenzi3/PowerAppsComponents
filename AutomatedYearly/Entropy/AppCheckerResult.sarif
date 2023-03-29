@@ -51,39 +51,39 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Browse.BrowseContainer.BrowseHeader_1.NewForm"
+                  "fullyQualifiedName": "BrowseHeader.NewForm"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Browse.BrowseContainer.BrowseHeader_1.NewForm",
+                  "fullyQualifiedName": "BrowseHeader.NewForm",
                   "relativeAddress": 0
                 },
                 "region": {
-                  "charLength": 21,
+                  "charLength": 5,
                   "charOffset": 0,
                   "snippet": {
-                    "text": "'Call Lag Automateds'"
+                    "text": "table"
                   }
                 }
               },
               "properties": {
                 "member": "NewForm",
-                "module": "Browse",
-                "type": "Browse.BrowseContainer.BrowseHeader_1"
+                "module": "BrowseHeader",
+                "type": "BrowseHeader"
               }
             }
           ],
           "message": {
             "arguments": [
-              "SampleBooleanField, SampleNumberField, SampleStringField"
+              "table"
             ],
             "id": "issue"
           },
           "properties": {
             "level": "High"
           },
-          "ruleId": "app-InvalidTable",
+          "ruleId": "app-ErrInvalidName",
           "ruleIndex": 1
         },
         {
@@ -887,17 +887,16 @@
               }
             },
             {
-              "id": "app-InvalidTable",
+              "id": "app-ErrInvalidName",
               "messageStrings": {
                 "issue": {
-                  "text": "The table passed in has none of the expected columns: {0}"
+                  "text": "Name isn't valid. '{0}' isn't recognized."
                 }
               },
               "properties": {
                 "componentType": "app",
                 "howToFix": [
-                  "Specify a different value.",
-                  "Change the structure of the value to match the expected structure. We recommend using the ForAll function to rearrange the table's columns."
+                  "Remove or correct the reference to the name that isn't valid."
                 ],
                 "level": "High",
                 "primaryCategory": "formula",
