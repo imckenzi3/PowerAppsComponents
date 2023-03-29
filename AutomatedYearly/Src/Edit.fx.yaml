@@ -7,15 +7,6 @@ Edit As screen:
         Width: =Parent.Width
         ZIndex: =4
 
-        EditHeader_1 As EditHeader:
-            AlignInContainer: =AlignInContainer.Stretch
-            ClearBtn: =Browse 
-            EditHeaderText: ="Edit"
-            HomeScreen: =Browse
-            LayoutMinHeight: =640
-            SubmitBtn: =
-            ZIndex: =1
-
         VertContainerLower_4 As groupContainer.horizontalAutoLayoutContainer:
             Fill: =RGBA(56, 96, 178, 1)
             FillPortions: =0
