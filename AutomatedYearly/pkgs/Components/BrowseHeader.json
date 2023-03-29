@@ -2525,7 +2525,7 @@
       "EditScreen",
       "NewForm"
     ],
-    "LastModifiedTimestamp": "638157082695058267",
+    "LastModifiedTimestamp": "638157085290656062",
     "Name": "BrowseHeader",
     "Rules": [
       {
@@ -2560,7 +2560,7 @@
       },
       {
         "Category": "Data",
-        "InvariantScript": "\"Text\"",
+        "InvariantScript": "true",
         "Property": "NewForm",
         "RuleProviderType": "System"
       },
@@ -2662,9 +2662,9 @@
       "DisplayName": "NewForm",
       "Hidden": false,
       "Name": "NewForm",
-      "PropertyDataTypeKey": "String",
+      "PropertyDataTypeKey": "Boolean",
       "Tooltip": "A custom property",
-      "Type": "{\"Version\":\"1.330\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"String\",\"EnumString\":\"\",\"Type\":[]}}"
+      "Type": "{\"Version\":\"1.330\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"_MinPrimitive\",\"EnumString\":\"\",\"Type\":[]}}"
     }
   ],
   "FirstParty": true,
@@ -2675,7 +2675,7 @@
   "IsPcfControl": false,
   "IsPremiumPcfControl": false,
   "IsWidgetTemplate": false,
-  "LastModifiedTimestamp": "638157082695058267",
+  "LastModifiedTimestamp": "638157085290656062",
   "Name": "918ecb6f30ca4f2a8bdfac51d6665eb2",
   "OverridableProperties": {},
   "SourceLibraryId": "480bfc4c-fa8b-488d-b15b-dd3cb533ae03",
