@@ -185,7 +185,7 @@
                 "Name": "EditImage_1",
                 "Parent": "VertContainerUpper_2",
                 "PersistMetaDataIDKey": false,
-                "PublishOrderIndex": 23,
+                "PublishOrderIndex": 129,
                 "Rules": [
                   {
                     "Category": "Data",
@@ -488,7 +488,7 @@
                 "Name": "DetailsBack_1",
                 "Parent": "VertContainerUpper_2",
                 "PersistMetaDataIDKey": false,
-                "PublishOrderIndex": 24,
+                "PublishOrderIndex": 130,
                 "Rules": [
                   {
                     "Category": "Design",
@@ -755,7 +755,7 @@
             "Name": "VertContainerUpper_2",
             "Parent": "HeaderContainer_2",
             "PersistMetaDataIDKey": false,
-            "PublishOrderIndex": 22,
+            "PublishOrderIndex": 128,
             "Rules": [
               {
                 "Category": "Design",
@@ -1033,7 +1033,7 @@
                 "Name": "EditTitle_1",
                 "Parent": "VertContainerLower_2",
                 "PersistMetaDataIDKey": false,
-                "PublishOrderIndex": 26,
+                "PublishOrderIndex": 132,
                 "Rules": [
                   {
                     "Category": "Data",
@@ -1405,7 +1405,7 @@
                 "Name": "EditDelete_1",
                 "Parent": "VertContainerLower_2",
                 "PersistMetaDataIDKey": false,
-                "PublishOrderIndex": 27,
+                "PublishOrderIndex": 133,
                 "Rules": [
                   {
                     "Category": "Design",
@@ -1687,7 +1687,7 @@
                 "Name": "EditEdit_1",
                 "Parent": "VertContainerLower_2",
                 "PersistMetaDataIDKey": false,
-                "PublishOrderIndex": 28,
+                "PublishOrderIndex": 134,
                 "Rules": [
                   {
                     "Category": "Design",
@@ -1954,7 +1954,7 @@
             "Name": "VertContainerLower_2",
             "Parent": "HeaderContainer_2",
             "PersistMetaDataIDKey": false,
-            "PublishOrderIndex": 25,
+            "PublishOrderIndex": 131,
             "Rules": [
               {
                 "Category": "Design",
@@ -2129,7 +2129,7 @@
         "Name": "HeaderContainer_2",
         "Parent": "EditHeader",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 21,
+        "PublishOrderIndex": 127,
         "Rules": [
           {
             "Category": "Design",
