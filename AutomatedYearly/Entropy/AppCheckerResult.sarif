@@ -76,7 +76,7 @@
           ],
           "message": {
             "arguments": [
-              "Record",
+              "Table",
               "Control"
             ],
             "id": "issue"
