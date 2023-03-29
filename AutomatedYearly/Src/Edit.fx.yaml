@@ -16,6 +16,43 @@ Edit As screen:
             SubmitBtn: =
             ZIndex: =1
 
+        VertContainerLower_4 As groupContainer.horizontalAutoLayoutContainer:
+            Fill: =RGBA(56, 96, 178, 1)
+            FillPortions: =0
+            Height: =100
+            LayoutJustifyContent: =LayoutJustifyContent.SpaceBetween
+            LayoutMinHeight: =112
+            LayoutMinWidth: =250
+            LayoutMode: =LayoutMode.Auto
+            ZIndex: =2
+
+            EditTitle_2 As label:
+                Align: =Align.Center
+                Color: =RGBA(255, 255, 255, 1)
+                Height: =Parent.Height
+                LayoutMinHeight: =70
+                LayoutMinWidth: =560
+                Size: =31
+                Text: ="Edit"
+                Width: =Parent.Width/2
+                ZIndex: =1
+
+            EditDelete_2 As icon.ArrowsUpDown:
+                AlignInContainer: =AlignInContainer.Center
+                Color: =RGBA(255, 255, 255, 1)
+                FillPortions: =1
+                Icon: =Icon.Cancel
+                OnSelect: =
+                ZIndex: =3
+
+            EditEdit_2 As icon.Add:
+                AlignInContainer: =AlignInContainer.Center
+                Color: =RGBA(255, 255, 255, 1)
+                FillPortions: =1
+                Icon: =Icon.Check
+                OnSelect: =
+                ZIndex: =4
+
         Form1 As form:
             DataSource: ='Call Lag Automateds'
             DefaultMode: |+
@@ -25,7 +62,7 @@ Edit As screen:
             LayoutMinHeight: =250
             LayoutMinWidth: =320
             Width: =640
-            ZIndex: =2
+            ZIndex: =3
 
             "'Name of Citizen/Company Called_DataCard2' As typedDataCard.textualEditCard":
                 BorderStyle: =BorderStyle.Solid
@@ -471,5 +508,5 @@ Edit As screen:
         Footer_3 As Footer:
             AlignInContainer: =AlignInContainer.Center
             LayoutMinHeight: =640
-            ZIndex: =3
+            ZIndex: =4
 
