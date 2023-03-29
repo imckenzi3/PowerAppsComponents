@@ -9,6 +9,7 @@ Edit As screen:
 
         EditHeader_1 As EditHeader:
             AlignInContainer: =AlignInContainer.Stretch
+            ClearBtn: =Browse 
             EditHeaderText: ="Edit"
             HomeScreen: =Browse
             LayoutMinHeight: =640

@@ -4076,7 +4076,14 @@
           "IsLockable": false,
           "NameMapSourceSchema": "?"
         },
-        "ClearBtn"
+        {
+          "AFDDataSourceName": "",
+          "AutoRuleBindingEnabled": false,
+          "AutoRuleBindingString": "App.ActiveScreen",
+          "InvariantPropertyName": "ClearBtn",
+          "IsLockable": false,
+          "NameMapSourceSchema": "?"
+        }
       ],
       "DynamicProperties": [
         {
@@ -4159,7 +4166,7 @@
         {
           "Category": "Data",
           "PropertyName": "ClearBtn",
-          "RuleProviderType": "System"
+          "RuleProviderType": "Unknown"
         },
         {
           "Category": "Design",
