@@ -1,14 +1,13 @@
-Edit As screen:
+EditBlank As screen:
 
-    EditContainer As groupContainer.verticalAutoLayoutContainer:
+    EditContainerBlank As groupContainer.verticalAutoLayoutContainer:
         Height: =Parent.Height
         LayoutDirection: =LayoutDirection.Vertical
         LayoutMode: =LayoutMode.Auto
         Width: =Parent.Width
         ZIndex: =4
 
-        EditHeader_1 As EditHeader:
-            AlignInContainer: =AlignInContainer.Stretch
+        EditHeaderBlank As EditHeader:
             ClearBtn: =Browse 
             EditHeaderText: ="Edit"
             HomeScreen: =Browse
@@ -16,18 +15,17 @@ Edit As screen:
             SubmitBtn: =Browse
             ZIndex: =1
 
-        Form1 As form:
+        FormBlank As form:
+            AlignInContainer: =AlignInContainer.SetByContainer
             DataSource: ='Call Lag Automateds'
-            DefaultMode: |+
-                =FormMode.Edit
-                
+            DefaultMode: =FormMode.New
             Item: =Gallery2.Selected
             LayoutMinHeight: =250
             LayoutMinWidth: =320
             Width: =640
             ZIndex: =2
 
-            "'Name of Citizen/Company Called_DataCard2' As typedDataCard.textualEditCard":
+            "'Name of Citizen/Company Called_DataCard2_1' As typedDataCard.textualEditCard":
                 BorderStyle: =BorderStyle.Solid
                 DataField: ="CitizensName"
                 Default: =ThisItem.'Name of Citizen/Company Called'
@@ -37,14 +35,14 @@ Edit As screen:
                 Height: =50
                 MaxLength: =DataSourceInfo([@'Call Lag Automateds'], DataSourceInfo.MaxLength, "CitizensName")
                 Required: =true
-                Update: =DataCardValue7.Text
+                Update: =DataCardValue7_1.Text
                 Width: =640
                 WidthFit: =true
                 X: =0
                 Y: =0
                 ZIndex: =3
 
-                DataCardKey7 As label:
+                DataCardKey7_1 As label:
                     AutoHeight: =true
                     Height: =48
                     Size: =21
@@ -55,7 +53,7 @@ Edit As screen:
                     Y: =10
                     ZIndex: =1
 
-                DataCardValue7 As text:
+                DataCardValue7_1 As text:
                     BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
                     Default: =Parent.Default
                     DelayOutput: =true
@@ -71,10 +69,10 @@ Edit As screen:
                     Tooltip: =Parent.DisplayName
                     Width: =Parent.Width - 60
                     X: =30
-                    Y: =DataCardKey7.Y + DataCardKey7.Height + 5
+                    Y: =DataCardKey7_1.Y + DataCardKey7_1.Height + 5
                     ZIndex: =2
 
-                ErrorMessage3 As label:
+                ErrorMessage3_1 As label:
                     AutoHeight: =true
                     Height: =10
                     Live: =Live.Assertive
@@ -87,21 +85,21 @@ Edit As screen:
                     Visible: =Parent.DisplayMode=DisplayMode.Edit
                     Width: =Parent.Width - 60
                     X: =30
-                    Y: =DataCardValue7.Y + DataCardValue7.Height
+                    Y: =DataCardValue7_1.Y + DataCardValue7_1.Height
                     ZIndex: =3
 
-                StarVisible3 As label:
+                StarVisible3_1 As label:
                     Align: =Align.Center
-                    Height: =DataCardKey7.Height
+                    Height: =DataCardKey7_1.Height
                     Size: =21
                     Text: ="*"
                     Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
                     Width: =30
                     Wrap: =false
-                    Y: =DataCardKey7.Y
+                    Y: =DataCardKey7_1.Y
                     ZIndex: =4
 
-            "'Purpose of Call_DataCard2' As typedDataCard.textualEditCard":
+            "'Purpose of Call_DataCard2_1' As typedDataCard.textualEditCard":
                 BorderStyle: =BorderStyle.Solid
                 DataField: ="ReasonForCall"
                 Default: =ThisItem.'Purpose of Call'
@@ -111,14 +109,14 @@ Edit As screen:
                 Height: =50
                 MaxLength: =DataSourceInfo([@'Call Lag Automateds'], DataSourceInfo.MaxLength, "ReasonForCall")
                 Required: =true
-                Update: =DataCardValue8.Text
+                Update: =DataCardValue8_1.Text
                 Width: =640
                 WidthFit: =true
                 X: =0
                 Y: =1
                 ZIndex: =3
 
-                DataCardKey8 As label:
+                DataCardKey8_1 As label:
                     AutoHeight: =true
                     Height: =48
                     Size: =21
@@ -129,7 +127,7 @@ Edit As screen:
                     Y: =10
                     ZIndex: =1
 
-                DataCardValue8 As text:
+                DataCardValue8_1 As text:
                     BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
                     Default: =Parent.Default
                     DelayOutput: =true
@@ -145,10 +143,10 @@ Edit As screen:
                     Tooltip: =Parent.DisplayName
                     Width: =Parent.Width - 60
                     X: =30
-                    Y: =DataCardKey8.Y + DataCardKey8.Height + 5
+                    Y: =DataCardKey8_1.Y + DataCardKey8_1.Height + 5
                     ZIndex: =2
 
-                ErrorMessage4 As label:
+                ErrorMessage4_1 As label:
                     AutoHeight: =true
                     Height: =10
                     Live: =Live.Assertive
@@ -161,21 +159,21 @@ Edit As screen:
                     Visible: =Parent.DisplayMode=DisplayMode.Edit
                     Width: =Parent.Width - 60
                     X: =30
-                    Y: =DataCardValue8.Y + DataCardValue8.Height
+                    Y: =DataCardValue8_1.Y + DataCardValue8_1.Height
                     ZIndex: =3
 
-                StarVisible4 As label:
+                StarVisible4_1 As label:
                     Align: =Align.Center
-                    Height: =DataCardKey8.Height
+                    Height: =DataCardKey8_1.Height
                     Size: =21
                     Text: ="*"
                     Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
                     Width: =30
                     Wrap: =false
-                    Y: =DataCardKey8.Y
+                    Y: =DataCardKey8_1.Y
                     ZIndex: =4
 
-            "'Employee Contacted_DataCard2' As typedDataCard.comboBoxEditCard":
+            "'Employee Contacted_DataCard2_1' As typedDataCard.comboBoxEditCard":
                 BorderStyle: =BorderStyle.Solid
                 DataField: ="EmployeeContacted"
                 Default: =ThisItem.'Employee Contacted'
@@ -184,14 +182,14 @@ Edit As screen:
                 Fill: =RGBA(0, 0, 0, 0)
                 Height: =50
                 Required: =false
-                Update: =DataCardValue9.Selected
+                Update: =DataCardValue9_1.Selected
                 Width: =640
                 WidthFit: =true
                 X: =0
                 Y: =2
                 ZIndex: =3
 
-                DataCardKey9 As label:
+                DataCardKey9_1 As label:
                     AutoHeight: =true
                     Height: =48
                     Size: =21
@@ -202,7 +200,7 @@ Edit As screen:
                     Y: =10
                     ZIndex: =1
 
-                DataCardValue9 As combobox:
+                DataCardValue9_1 As combobox:
                     BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
                     DefaultSelectedItems: =Parent.Default
                     DisplayFields: =["DisplayName","Email","Picture"]
@@ -211,17 +209,17 @@ Edit As screen:
                     Items: =Choices([@'Call Lag Automateds'].EmployeeContacted)
                     PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
                     SearchFields: =["DisplayName"]
-                    SearchItems: =Choices('Call Lag Automateds'.EmployeeContacted,DataCardValue9.SearchText)
+                    SearchItems: =Choices('Call Lag Automateds'.EmployeeContacted,DataCardValue9_1.SearchText)
                     SelectMultiple: =false
                     Size: =21
                     Template: =ListItemTemplate.Person
                     Tooltip: =Parent.DisplayName
                     Width: =Parent.Width - 60
                     X: =30
-                    Y: =DataCardKey9.Y + DataCardKey9.Height + 5
+                    Y: =DataCardKey9_1.Y + DataCardKey9_1.Height + 5
                     ZIndex: =2
 
-                ErrorMessage5 As label:
+                ErrorMessage5_1 As label:
                     AutoHeight: =true
                     Height: =10
                     Live: =Live.Assertive
@@ -234,21 +232,21 @@ Edit As screen:
                     Visible: =Parent.DisplayMode=DisplayMode.Edit
                     Width: =Parent.Width - 60
                     X: =30
-                    Y: =DataCardValue9.Y + DataCardValue9.Height
+                    Y: =DataCardValue9_1.Y + DataCardValue9_1.Height
                     ZIndex: =3
 
-                StarVisible5 As label:
+                StarVisible5_1 As label:
                     Align: =Align.Center
-                    Height: =DataCardKey9.Height
+                    Height: =DataCardKey9_1.Height
                     Size: =21
                     Text: ="*"
                     Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
                     Width: =30
                     Wrap: =false
-                    Y: =DataCardKey9.Y
+                    Y: =DataCardKey9_1.Y
                     ZIndex: =4
 
-            Ministry_DataCard2 As typedDataCard.textualEditCard:
+            Ministry_DataCard2_1 As typedDataCard.textualEditCard:
                 BorderStyle: =BorderStyle.Solid
                 DataField: ="Ministry"
                 Default: =ThisItem.Ministry
@@ -258,14 +256,14 @@ Edit As screen:
                 Height: =50
                 MaxLength: =DataSourceInfo([@'Call Lag Automateds'], DataSourceInfo.MaxLength, "Ministry")
                 Required: =false
-                Update: =DataCardValue10.Text
+                Update: =DataCardValue10_1.Text
                 Width: =640
                 WidthFit: =true
                 X: =0
                 Y: =3
                 ZIndex: =3
 
-                DataCardKey10 As label:
+                DataCardKey10_1 As label:
                     AutoHeight: =true
                     Height: =48
                     Size: =21
@@ -276,7 +274,7 @@ Edit As screen:
                     Y: =10
                     ZIndex: =1
 
-                DataCardValue10 As text:
+                DataCardValue10_1 As text:
                     BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
                     Default: =Parent.Default
                     DelayOutput: =true
@@ -292,10 +290,10 @@ Edit As screen:
                     Tooltip: =Parent.DisplayName
                     Width: =Parent.Width - 60
                     X: =30
-                    Y: =DataCardKey10.Y + DataCardKey10.Height + 5
+                    Y: =DataCardKey10_1.Y + DataCardKey10_1.Height + 5
                     ZIndex: =2
 
-                ErrorMessage6 As label:
+                ErrorMessage6_1 As label:
                     AutoHeight: =true
                     Height: =10
                     Live: =Live.Assertive
@@ -308,21 +306,21 @@ Edit As screen:
                     Visible: =Parent.DisplayMode=DisplayMode.Edit
                     Width: =Parent.Width - 60
                     X: =30
-                    Y: =DataCardValue10.Y + DataCardValue10.Height
+                    Y: =DataCardValue10_1.Y + DataCardValue10_1.Height
                     ZIndex: =3
 
-                StarVisible6 As label:
+                StarVisible6_1 As label:
                     Align: =Align.Center
-                    Height: =DataCardKey10.Height
+                    Height: =DataCardKey10_1.Height
                     Size: =21
                     Text: ="*"
                     Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
                     Width: =30
                     Wrap: =false
-                    Y: =DataCardKey10.Y
+                    Y: =DataCardKey10_1.Y
                     ZIndex: =4
 
-            "'Status of Call_DataCard2' As typedDataCard.comboBoxEditCard":
+            "'Status of Call_DataCard2_1' As typedDataCard.comboBoxEditCard":
                 BorderStyle: =BorderStyle.Solid
                 DataField: ="TransferorVoicemail"
                 Default: =ThisItem.'Status of Call'
@@ -331,14 +329,14 @@ Edit As screen:
                 Fill: =RGBA(0, 0, 0, 0)
                 Height: =50
                 Required: =true
-                Update: =DataCardValue11.Selected
+                Update: =DataCardValue11_1.Selected
                 Width: =640
                 WidthFit: =true
                 X: =0
                 Y: =4
                 ZIndex: =3
 
-                DataCardKey11 As label:
+                DataCardKey11_1 As label:
                     AutoHeight: =true
                     Height: =48
                     Size: =21
@@ -349,7 +347,7 @@ Edit As screen:
                     Y: =10
                     ZIndex: =1
 
-                DataCardValue11 As combobox:
+                DataCardValue11_1 As combobox:
                     BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
                     DefaultSelectedItems: =Parent.Default
                     DisplayFields: =["Value"]
@@ -358,16 +356,16 @@ Edit As screen:
                     Items: =Choices([@'Call Lag Automateds'].TransferorVoicemail)
                     PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
                     SearchFields: =["Value"]
-                    SearchItems: =Choices('Call Lag Automateds'.TransferorVoicemail,DataCardValue11.SearchText)
+                    SearchItems: =Choices('Call Lag Automateds'.TransferorVoicemail,DataCardValue11_1.SearchText)
                     SelectMultiple: =false
                     Size: =21
                     Tooltip: =Parent.DisplayName
                     Width: =Parent.Width - 60
                     X: =30
-                    Y: =DataCardKey11.Y + DataCardKey11.Height + 5
+                    Y: =DataCardKey11_1.Y + DataCardKey11_1.Height + 5
                     ZIndex: =2
 
-                ErrorMessage7 As label:
+                ErrorMessage7_1 As label:
                     AutoHeight: =true
                     Height: =10
                     Live: =Live.Assertive
@@ -380,21 +378,21 @@ Edit As screen:
                     Visible: =Parent.DisplayMode=DisplayMode.Edit
                     Width: =Parent.Width - 60
                     X: =30
-                    Y: =DataCardValue11.Y + DataCardValue11.Height
+                    Y: =DataCardValue11_1.Y + DataCardValue11_1.Height
                     ZIndex: =3
 
-                StarVisible7 As label:
+                StarVisible7_1 As label:
                     Align: =Align.Center
-                    Height: =DataCardKey11.Height
+                    Height: =DataCardKey11_1.Height
                     Size: =21
                     Text: ="*"
                     Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
                     Width: =30
                     Wrap: =false
-                    Y: =DataCardKey11.Y
+                    Y: =DataCardKey11_1.Y
                     ZIndex: =4
 
-            "'Additional Notes_DataCard2' As typedDataCard.textualEditCard":
+            "'Additional Notes_DataCard2_1' As typedDataCard.textualEditCard":
                 BorderStyle: =BorderStyle.Solid
                 DataField: ="Notes"
                 Default: =ThisItem.'Additional Notes'
@@ -404,14 +402,14 @@ Edit As screen:
                 Height: =50
                 MaxLength: =DataSourceInfo([@'Call Lag Automateds'], DataSourceInfo.MaxLength, "Notes")
                 Required: =false
-                Update: =DataCardValue12.Text
+                Update: =DataCardValue12_1.Text
                 Width: =640
                 WidthFit: =true
                 X: =0
                 Y: =5
                 ZIndex: =3
 
-                DataCardKey12 As label:
+                DataCardKey12_1 As label:
                     AutoHeight: =true
                     Height: =48
                     Size: =21
@@ -422,7 +420,7 @@ Edit As screen:
                     Y: =10
                     ZIndex: =1
 
-                DataCardValue12 As text:
+                DataCardValue12_1 As text:
                     BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
                     Default: =Parent.Default
                     DelayOutput: =true
@@ -438,10 +436,10 @@ Edit As screen:
                     Tooltip: =Parent.DisplayName
                     Width: =Parent.Width - 60
                     X: =30
-                    Y: =DataCardKey12.Y + DataCardKey12.Height + 5
+                    Y: =DataCardKey12_1.Y + DataCardKey12_1.Height + 5
                     ZIndex: =2
 
-                ErrorMessage8 As label:
+                ErrorMessage8_1 As label:
                     AutoHeight: =true
                     Height: =10
                     Live: =Live.Assertive
@@ -454,22 +452,21 @@ Edit As screen:
                     Visible: =Parent.DisplayMode=DisplayMode.Edit
                     Width: =Parent.Width - 60
                     X: =30
-                    Y: =DataCardValue12.Y + DataCardValue12.Height
+                    Y: =DataCardValue12_1.Y + DataCardValue12_1.Height
                     ZIndex: =3
 
-                StarVisible8 As label:
+                StarVisible8_1 As label:
                     Align: =Align.Center
-                    Height: =DataCardKey12.Height
+                    Height: =DataCardKey12_1.Height
                     Size: =21
                     Text: ="*"
                     Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
                     Width: =30
                     Wrap: =false
-                    Y: =DataCardKey12.Y
+                    Y: =DataCardKey12_1.Y
                     ZIndex: =4
 
-        Footer_3 As Footer:
-            AlignInContainer: =AlignInContainer.Center
+        FooterBlank As Footer:
             LayoutMinHeight: =640
             ZIndex: =3
 

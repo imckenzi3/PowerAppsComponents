@@ -119,6 +119,7 @@
   "ScreenOrder": [
     "Browse",
     "Edit",
+    "EditBlank",
     "Details"
   ]
 }

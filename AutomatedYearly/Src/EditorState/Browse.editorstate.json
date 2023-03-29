@@ -497,7 +497,7 @@
           "IsLockable": false,
           "NameMapSourceSchema": "?"
         },
-        "ResetGallery"
+        "NewForm"
       ],
       "DynamicProperties": [
         {
@@ -589,8 +589,8 @@
         },
         {
           "Category": "Data",
-          "PropertyName": "ResetGallery",
-          "RuleProviderType": "System"
+          "PropertyName": "NewForm",
+          "RuleProviderType": "Unknown"
         },
         {
           "Category": "Design",

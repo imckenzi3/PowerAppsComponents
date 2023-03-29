@@ -130,7 +130,7 @@
                     "NameMapSourceSchema": "?"
                   }
                 ],
-                "ControlUniqueId": "116",
+                "ControlUniqueId": "150",
                 "DynamicProperties": [
                   {
                     "ControlPropertyState": "FillPortions",
@@ -185,7 +185,7 @@
                 "Name": "HeaderImage",
                 "Parent": "VertContainerUpper",
                 "PersistMetaDataIDKey": false,
-                "PublishOrderIndex": 70,
+                "PublishOrderIndex": 14,
                 "Rules": [
                   {
                     "Category": "Data",
@@ -433,7 +433,7 @@
                     "NameMapSourceSchema": "?"
                   }
                 ],
-                "ControlUniqueId": "117",
+                "ControlUniqueId": "151",
                 "DynamicProperties": [
                   {
                     "ControlPropertyState": "FillPortions",
@@ -495,7 +495,7 @@
                 "Name": "HeaderBack",
                 "Parent": "VertContainerUpper",
                 "PersistMetaDataIDKey": false,
-                "PublishOrderIndex": 71,
+                "PublishOrderIndex": 15,
                 "Rules": [
                   {
                     "Category": "Design",
@@ -700,7 +700,7 @@
               "LayoutWrap",
               "ZIndex"
             ],
-            "ControlUniqueId": "115",
+            "ControlUniqueId": "149",
             "DynamicProperties": [
               {
                 "ControlPropertyState": {
@@ -762,7 +762,7 @@
             "Name": "VertContainerUpper",
             "Parent": "HeaderContainer",
             "PersistMetaDataIDKey": false,
-            "PublishOrderIndex": 69,
+            "PublishOrderIndex": 13,
             "Rules": [
               {
                 "Category": "Design",
@@ -930,7 +930,14 @@
                   "HoverFill",
                   "Font",
                   "FontWeight",
-                  "Align",
+                  {
+                    "AFDDataSourceName": "",
+                    "AutoRuleBindingEnabled": false,
+                    "AutoRuleBindingString": "",
+                    "InvariantPropertyName": "Align",
+                    "IsLockable": false,
+                    "NameMapSourceSchema": "?"
+                  },
                   "VerticalAlign",
                   "X",
                   "Y",
@@ -955,7 +962,14 @@
                   "LineHeight",
                   "BorderThickness",
                   "FocusedBorderThickness",
-                  "Size",
+                  {
+                    "AFDDataSourceName": "",
+                    "AutoRuleBindingEnabled": false,
+                    "AutoRuleBindingString": "",
+                    "InvariantPropertyName": "Size",
+                    "IsLockable": false,
+                    "NameMapSourceSchema": "?"
+                  },
                   "Italic",
                   "Underline",
                   "Strikethrough",
@@ -964,7 +978,7 @@
                   "PaddingBottom",
                   "PaddingLeft"
                 ],
-                "ControlUniqueId": "119",
+                "ControlUniqueId": "153",
                 "DynamicProperties": [
                   {
                     "ControlPropertyState": {
@@ -1026,7 +1040,7 @@
                 "Name": "HeaderTitle",
                 "Parent": "VertContainerLower",
                 "PersistMetaDataIDKey": false,
-                "PublishOrderIndex": 73,
+                "PublishOrderIndex": 17,
                 "Rules": [
                   {
                     "Category": "Data",
@@ -1090,7 +1104,7 @@
                   },
                   {
                     "Category": "Design",
-                    "InvariantScript": "Align.Left",
+                    "InvariantScript": "Align.Center",
                     "Property": "Align",
                     "RuleProviderType": "Unknown"
                   },
@@ -1198,7 +1212,7 @@
                   },
                   {
                     "Category": "Design",
-                    "InvariantScript": "21",
+                    "InvariantScript": "31",
                     "Property": "Size",
                     "RuleProviderType": "Unknown"
                   },
@@ -1314,7 +1328,7 @@
                   "BorderThickness",
                   "FocusedBorderThickness"
                 ],
-                "ControlUniqueId": "120",
+                "ControlUniqueId": "154",
                 "DynamicProperties": [
                   {
                     "ControlPropertyState": {
@@ -1383,7 +1397,7 @@
                 "Name": "HeaderRefresh",
                 "Parent": "VertContainerLower",
                 "PersistMetaDataIDKey": false,
-                "PublishOrderIndex": 74,
+                "PublishOrderIndex": 18,
                 "Rules": [
                   {
                     "Category": "Design",
@@ -1575,7 +1589,7 @@
                   "BorderThickness",
                   "FocusedBorderThickness"
                 ],
-                "ControlUniqueId": "121",
+                "ControlUniqueId": "155",
                 "DynamicProperties": [
                   {
                     "ControlPropertyState": {
@@ -1644,7 +1658,7 @@
                 "Name": "HeaderSort",
                 "Parent": "VertContainerLower",
                 "PersistMetaDataIDKey": false,
-                "PublishOrderIndex": 75,
+                "PublishOrderIndex": 19,
                 "Rules": [
                   {
                     "Category": "Design",
@@ -1844,7 +1858,7 @@
                     "NameMapSourceSchema": "?"
                   }
                 ],
-                "ControlUniqueId": "122",
+                "ControlUniqueId": "156",
                 "DynamicProperties": [
                   {
                     "ControlPropertyState": {
@@ -1913,7 +1927,7 @@
                 "Name": "HeaderAdd",
                 "Parent": "VertContainerLower",
                 "PersistMetaDataIDKey": false,
-                "PublishOrderIndex": 76,
+                "PublishOrderIndex": 20,
                 "Rules": [
                   {
                     "Category": "Design",
@@ -2055,7 +2069,7 @@
                   },
                   {
                     "Category": "Behavior",
-                    "InvariantScript": "Navigate(BrowseHeader.EditScreen);",
+                    "InvariantScript": "Navigate(BrowseHeader.EditScreen) ",
                     "Property": "OnSelect",
                     "RuleProviderType": "Unknown"
                   }
@@ -2118,7 +2132,7 @@
               "LayoutWrap",
               "ZIndex"
             ],
-            "ControlUniqueId": "118",
+            "ControlUniqueId": "152",
             "DynamicProperties": [
               {
                 "ControlPropertyState": {
@@ -2180,7 +2194,7 @@
             "Name": "VertContainerLower",
             "Parent": "HeaderContainer",
             "PersistMetaDataIDKey": false,
-            "PublishOrderIndex": 72,
+            "PublishOrderIndex": 16,
             "Rules": [
               {
                 "Category": "Design",
@@ -2342,7 +2356,7 @@
           "LayoutWrap",
           "ZIndex"
         ],
-        "ControlUniqueId": "114",
+        "ControlUniqueId": "148",
         "HasDynamicProperties": false,
         "Index": 0,
         "IsAutoGenerated": false,
@@ -2355,7 +2369,7 @@
         "Name": "HeaderContainer",
         "Parent": "BrowseHeader",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 68,
+        "PublishOrderIndex": 12,
         "Rules": [
           {
             "Category": "Design",
@@ -2509,9 +2523,9 @@
       "HeaderFontSize",
       "DetailsScreen",
       "EditScreen",
-      "ResetGallery"
+      "NewForm"
     ],
-    "LastModifiedTimestamp": "638157036769832849",
+    "LastModifiedTimestamp": "638157085290656062",
     "Name": "BrowseHeader",
     "Rules": [
       {
@@ -2528,7 +2542,7 @@
       },
       {
         "Category": "Data",
-        "InvariantScript": "\"Screen text goes here\"",
+        "InvariantScript": "\"display text goes here\"",
         "Property": "HeaderText",
         "RuleProviderType": "System"
       },
@@ -2546,8 +2560,8 @@
       },
       {
         "Category": "Data",
-        "InvariantScript": "Table({SampleStringField: \"SampleText\", SampleNumberField: 10, SampleBooleanField: true})",
-        "Property": "ResetGallery",
+        "InvariantScript": "true",
+        "Property": "NewForm",
         "RuleProviderType": "System"
       },
       {
@@ -2645,12 +2659,12 @@
     },
     {
       "Category": 0,
-      "DisplayName": "ResetGallery",
+      "DisplayName": "NewForm",
       "Hidden": false,
-      "Name": "ResetGallery",
-      "PropertyDataTypeKey": "Table",
+      "Name": "NewForm",
+      "PropertyDataTypeKey": "Boolean",
       "Tooltip": "A custom property",
-      "Type": "{\"Version\":\"1.330\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"Table\",\"EnumString\":\"\",\"Type\":[{\"Name\":\"SampleBooleanField\",\"Kind\":\"_MinPrimitive\",\"EnumString\":\"\",\"Type\":[]},{\"Name\":\"SampleNumberField\",\"Kind\":\"Number\",\"EnumString\":\"\",\"Type\":[]},{\"Name\":\"SampleStringField\",\"Kind\":\"String\",\"EnumString\":\"\",\"Type\":[]}]}}"
+      "Type": "{\"Version\":\"1.330\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"_MinPrimitive\",\"EnumString\":\"\",\"Type\":[]}}"
     }
   ],
   "FirstParty": true,
@@ -2661,7 +2675,7 @@
   "IsPcfControl": false,
   "IsPremiumPcfControl": false,
   "IsWidgetTemplate": false,
-  "LastModifiedTimestamp": "638157036769832849",
+  "LastModifiedTimestamp": "638157085290656062",
   "Name": "918ecb6f30ca4f2a8bdfac51d6665eb2",
   "OverridableProperties": {},
   "SourceLibraryId": "480bfc4c-fa8b-488d-b15b-dd3cb533ae03",

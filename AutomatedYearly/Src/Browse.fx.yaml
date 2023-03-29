@@ -5,15 +5,16 @@ Browse As screen:
         LayoutDirection: =LayoutDirection.Vertical
         LayoutMode: =LayoutMode.Auto
         Width: =Parent.Width
-        ZIndex: =4
+        ZIndex: =2
 
         BrowseHeader_1 As BrowseHeader:
             AlignInContainer: =AlignInContainer.Stretch
             DetailsScreen: =Details
-            EditScreen: =Edit
-            HeaderText: ="MNBC Call Log"
+            EditScreen: =EditBlank
+            HeaderText: ="Browse"
             HomeScreen: =Browse
             LayoutMinHeight: =640
+            NewForm: =
 
         "Gallery2 As gallery.'BrowseLayout_Flexible_NewsFeed_ver4.0'":
             DelayItemLoading: =true
