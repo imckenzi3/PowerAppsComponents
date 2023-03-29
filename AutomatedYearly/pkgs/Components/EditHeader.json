@@ -185,7 +185,7 @@
                 "Name": "EditImage_1",
                 "Parent": "VertContainerUpper_2",
                 "PersistMetaDataIDKey": false,
-                "PublishOrderIndex": 95,
+                "PublishOrderIndex": 23,
                 "Rules": [
                   {
                     "Category": "Data",
@@ -488,7 +488,7 @@
                 "Name": "DetailsBack_1",
                 "Parent": "VertContainerUpper_2",
                 "PersistMetaDataIDKey": false,
-                "PublishOrderIndex": 96,
+                "PublishOrderIndex": 24,
                 "Rules": [
                   {
                     "Category": "Design",
@@ -755,7 +755,7 @@
             "Name": "VertContainerUpper_2",
             "Parent": "HeaderContainer_2",
             "PersistMetaDataIDKey": false,
-            "PublishOrderIndex": 94,
+            "PublishOrderIndex": 22,
             "Rules": [
               {
                 "Category": "Design",
@@ -1033,7 +1033,7 @@
                 "Name": "EditTitle_1",
                 "Parent": "VertContainerLower_2",
                 "PersistMetaDataIDKey": false,
-                "PublishOrderIndex": 98,
+                "PublishOrderIndex": 26,
                 "Rules": [
                   {
                     "Category": "Data",
@@ -1405,7 +1405,7 @@
                 "Name": "EditDelete_1",
                 "Parent": "VertContainerLower_2",
                 "PersistMetaDataIDKey": false,
-                "PublishOrderIndex": 99,
+                "PublishOrderIndex": 27,
                 "Rules": [
                   {
                     "Category": "Design",
@@ -1687,7 +1687,7 @@
                 "Name": "EditEdit_1",
                 "Parent": "VertContainerLower_2",
                 "PersistMetaDataIDKey": false,
-                "PublishOrderIndex": 100,
+                "PublishOrderIndex": 28,
                 "Rules": [
                   {
                     "Category": "Design",
@@ -1954,7 +1954,7 @@
             "Name": "VertContainerLower_2",
             "Parent": "HeaderContainer_2",
             "PersistMetaDataIDKey": false,
-            "PublishOrderIndex": 97,
+            "PublishOrderIndex": 25,
             "Rules": [
               {
                 "Category": "Design",
@@ -2129,7 +2129,7 @@
         "Name": "HeaderContainer_2",
         "Parent": "EditHeader",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 93,
+        "PublishOrderIndex": 21,
         "Rules": [
           {
             "Category": "Design",
@@ -2283,7 +2283,7 @@
       "SubmitBtn",
       "ClearBtn"
     ],
-    "LastModifiedTimestamp": "638157063735352511",
+    "LastModifiedTimestamp": "638157070601929958",
     "Name": "EditHeader",
     "Rules": [
       {
@@ -2403,7 +2403,7 @@
   "IsPcfControl": false,
   "IsPremiumPcfControl": false,
   "IsWidgetTemplate": false,
-  "LastModifiedTimestamp": "638157063735352511",
+  "LastModifiedTimestamp": "638157070601929958",
   "Name": "34adb598f43747319a8edaa010b7758d",
   "OverridableProperties": {},
   "SourceLibraryId": "480bfc4c-fa8b-488d-b15b-dd3cb533ae03",

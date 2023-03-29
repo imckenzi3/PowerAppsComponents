@@ -3,10 +3,10 @@ BrowseHeader As CanvasComponent:
     EditScreen: =App.ActiveScreen
     Fill: =RGBA(0, 0, 0, 0)
     HeaderFontSize: =100
-    HeaderText: ="Screen text goes here"
+    HeaderText: ="display text goes here"
     Height: =200
     HomeScreen: =App.ActiveScreen
-    NewForm: ="Text"
+    NewForm: =true
     Width: =640
     X: =0
     Y: =0
@@ -85,6 +85,6 @@ BrowseHeader As CanvasComponent:
                 Color: =RGBA(255, 255, 255, 1)
                 FillPortions: =1
                 Icon: =Icon.Add
-                OnSelect: =Navigate(BrowseHeader.EditScreen) && BrowseHeader.NewForm
+                OnSelect: =Navigate(BrowseHeader.EditScreen)
                 ZIndex: =4
 
