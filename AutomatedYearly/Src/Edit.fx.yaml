@@ -46,7 +46,7 @@ Edit As screen:
                 Color: =RGBA(255, 255, 255, 1)
                 FillPortions: =1
                 Icon: =Icon.Check
-                OnSelect: =
+                OnSelect: =SubmitForm(Form1)
                 ZIndex: =4
 
         Form1 As form:
