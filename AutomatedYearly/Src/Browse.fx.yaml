@@ -7,14 +7,6 @@ Browse As screen:
         Width: =Parent.Width
         ZIndex: =2
 
-        BrowseHeader_1 As BrowseHeader:
-            AlignInContainer: =AlignInContainer.Stretch
-            DetailsScreen: =Details
-            EditScreen: =EditBlank
-            HeaderText: ="Browse"
-            HomeScreen: =Browse
-            LayoutMinHeight: =640
-
         VertContainerLower_3 As groupContainer.horizontalAutoLayoutContainer:
             Fill: =RGBA(56, 96, 178, 1)
             FillPortions: =0
